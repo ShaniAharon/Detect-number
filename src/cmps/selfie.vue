@@ -70,7 +70,7 @@
         const imgFile = await this.dataUrlToFile(this.imgSrc, 'test')
         const res = await uploadImg(imgFile)
         const imageRes = await tesseractService.save({imgUrl: res.url})
-        console.log('imageRes', imageRes)
+        console.log('imageResualt', imageRes)
         this.prepareData(imageRes)
         // this.$emit('picture-taken', this.canvas.toDataURL('image/png'))
       },
